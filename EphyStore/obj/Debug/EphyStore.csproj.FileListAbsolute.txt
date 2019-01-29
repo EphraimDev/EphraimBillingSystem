@@ -1,0 +1,11 @@
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\bin\Debug\EphyStore.exe.config
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\bin\Debug\EphyStore.exe
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\bin\Debug\EphyStore.pdb
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.csprojResolveAssemblyReference.cache
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.MainAdminDashboard.resources
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.Properties.Resources.resources
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.csproj.GenerateResource.Cache
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.exe
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.pdb
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.UserDashboard.resources
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.UI.Users.resources
