@@ -28,5 +28,17 @@ namespace EphyStore
             Users user = new Users();
             user.Show();
         }
+
+        private void MainAdminDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainAdminDashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            Hide();
+        }
     }
 }

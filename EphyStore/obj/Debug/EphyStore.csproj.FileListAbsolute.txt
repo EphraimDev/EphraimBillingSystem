@@ -9,3 +9,4 @@ C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.exe
 C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.pdb
 C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.UserDashboard.resources
 C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.UI.Users.resources
+C:\Users\Citta\Ephraim\EphyStore\EphyStore\obj\Debug\EphyStore.UI.Login.resources

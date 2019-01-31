@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelTop = new System.Windows.Forms.Label();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
+            this.labelTop = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.textBoxAddress = new System.Windows.Forms.TextBox();
@@ -73,6 +73,15 @@
             this.panel1.Size = new System.Drawing.Size(999, 36);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Location = new System.Drawing.Point(975, 3);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(24, 33);
+            this.pictureBoxClose.TabIndex = 1;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
+            // 
             // labelTop
             // 
             this.labelTop.AutoSize = true;
@@ -82,15 +91,6 @@
             this.labelTop.Size = new System.Drawing.Size(57, 21);
             this.labelTop.TabIndex = 0;
             this.labelTop.Text = "USERS";
-            // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.Location = new System.Drawing.Point(975, 3);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(24, 33);
-            this.pictureBoxClose.TabIndex = 1;
-            this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // labelFirstName
             // 
@@ -299,6 +299,7 @@
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.Size = new System.Drawing.Size(637, 334);
             this.dataGridViewUsers.TabIndex = 21;
+            this.dataGridViewUsers.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewUsers_RowHeaderMouseClick);
             // 
             // textBoxSearch
             // 
@@ -306,9 +307,9 @@
             this.textBoxSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSearch.Location = new System.Drawing.Point(403, 40);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.ReadOnly = true;
             this.textBoxSearch.Size = new System.Drawing.Size(584, 25);
             this.textBoxSearch.TabIndex = 23;
+            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
             // labelSearch
             // 
@@ -345,6 +346,7 @@
             this.buttonDelete.TabIndex = 25;
             this.buttonDelete.Text = "DELETE";
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonUpdate
             // 
@@ -357,6 +359,7 @@
             this.buttonUpdate.TabIndex = 26;
             this.buttonUpdate.Text = "UPDATE";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // Users
             // 

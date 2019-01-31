@@ -190,5 +190,40 @@ namespace EphyStore.Data_Access_Layer
             return isSuccess;
         }
         #endregion
+
+        #region Search User on Database using keywords
+        public DataTable search(string keyword)
+        {
+            //static method to connect to the database
+            SqlConnection con = new SqlConnection(myconnstring);
+            // To hold data from database
+            DataTable dt = new DataTable();
+            try
+            {
+                // Sql Query to get data from database
+                string sql = "Select * from Users where id like '%"+keyword+"%' or firstname like '%"+keyword+ "%' or lastname like '%" + keyword + "%' or username like '%" + keyword+"%'";
+                // For executing command
+                SqlCommand cmd = new SqlCommand(sql, con);
+                // Getting data from database
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                // Open Database connection 
+                con.Open();
+                // Fill data in our datatable
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                // Throw message if any error occurs
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                // Close connection
+                con.Close();
+            }
+            // Return value in datatable
+            return dt;
+        }
+        #endregion
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EphyStore.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace EphyStore
         public UserDashboard()
         {
             InitializeComponent();
+        }
+
+        private void UserDashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            Hide();
         }
     }
 }
